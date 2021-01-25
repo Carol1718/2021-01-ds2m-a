@@ -1,5 +1,6 @@
 package br.senai.sp.jandira;
 
+import br.senai.sp.jandira.model.Cliente;
 import br.senai.sp.jandira.model.Conta;
 
 public class App {
@@ -7,34 +8,38 @@ public class App {
 	public static void main(String[] args) {
 
 		
-		Conta contaDaAna = new Conta();
+		Conta contaDaAnaGomes = new Conta();
 		Conta contaDoJoao = new Conta();
 		
-		contaDaAna.titular = "Ana Gomes";
-		contaDaAna.numero = "111-98";
-		contaDaAna.setTipo("Corrente");
-		contaDaAna.ativa = true;
-		contaDaAna.chequeEspecial = 200;
-		contaDaAna.depositar(100);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.depositar(30);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(50);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(500);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(50);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(80);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.depositar(100);
-		contaDaAna.mostrarSaldoDaConta();
+//		contaDaAnaGomes.setTitular("Ana Gomes");
+		contaDaAnaGomes.setNumero("111-98");
+		contaDaAnaGomes.setTipo("Corrente");
+		contaDaAnaGomes.setAtiva(true);
+		contaDaAnaGomes.setChequeespecial(200);
+		contaDaAnaGomes.depositar(100);
+		contaDaAnaGomes.mostrarSaldoDaConta();
+		contaDaAnaGomes.depositar(30);
+		contaDaAnaGomes.mostrarSaldoDaConta();
+		contaDaAnaGomes.sacar(50);
+		contaDaAnaGomes.mostrarSaldoDaConta();
+		contaDaAnaGomes.sacar(500);
+		contaDaAnaGomes.mostrarSaldoDaConta();
+		contaDaAnaGomes.sacar(50);
+		contaDaAnaGomes.mostrarSaldoDaConta();
+		contaDaAnaGomes.sacar(80);
+		contaDaAnaGomes.mostrarSaldoDaConta();
+		contaDaAnaGomes.depositar(100);
+		contaDaAnaGomes.mostrarSaldoDaConta();
 		
-		double valorSaldo = contaDaAna.getSaldo();
+		double valorSaldo = contaDaAnaGomes.getSaldo();
 		
 		System.out.println("*****" + valorSaldo);
+//		System.out.println("Nome:"+ contaDaAnaGomes.getTitular());
+		System.out.println("Tipo:" + contaDaAnaGomes.getNumero());
+		System.out.println("Conta:" + contaDaAnaGomes.getChequeespecial());
 		
-		System.out.println(contaDaAna.getTitular());
+		
+		
 	} 
 
 
